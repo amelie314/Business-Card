@@ -1,0 +1,72 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 100px auto;
+  padding: 0px;
+  overflow: hidden;
+  background: #0B1013;
+}
+
+.container .card {
+  margin: 0 auto;
+  height: 380px;
+  width: 300px;
+  position: relative;
+  position: relative;
+}
+.container .card .front .top {
+  height: 190px;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/121486/pexels-photo-121486.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.container .card .front .bottom {
+  color: white;
+  height: 190px;
+  width: 100%;
+  background: rgba(200, 38, 29, 0.7);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+.container .card .front .bottom .info {
+  vertical-align: middle;
+  text-align: center;
+}
+.container .card .front .bottom .name {
+  padding: 40px 0px 0px 0px;
+  font-size: 25px;
+}
+.container .card .front .bottom .work {
+  font-size: 15px;
+  font-weight: 900;
+  color: #EB7A77;
+}
+.container .card .front .bottom .porfolio {
+  padding: 40px;
+}
+.container #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.container #background #background-image {
+  height: calc(100% + 60px);
+  width: calc(100% + 60px);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  -webkit-filter: blur(8px);
+  background-image: url(https://images.pexels.com/photos/121486/pexels-photo-121486.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: cover;
+}
