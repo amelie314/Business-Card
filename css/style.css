@@ -15,26 +15,40 @@ body {
   background: #0B1013;
 }
 
+@keyframes card-ani {
+  0% {
+    opacity: 0;
+    transform: translateX(40px) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+  }
+}
 .container .card {
   margin: 0 auto;
   height: 380px;
   width: 300px;
-  position: relative;
+  animation: card-ani 1s;
+  transition-delay: 1s;
+  transition-timing-function: easeOutCirc;
   position: relative;
 }
+.container .card .front {
+  display: relative;
+}
 .container .card .front .top {
-  height: 190px;
-  width: 100%;
   background-image: url(https://images.pexels.com/photos/121486/pexels-photo-121486.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
   background-size: cover;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
+  height: 190px;
 }
 .container .card .front .bottom {
   color: white;
   height: 190px;
   width: 100%;
   background: rgba(200, 38, 29, 0.7);
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   text-align: center;
 }
 .container .card .front .bottom .info {
@@ -42,16 +56,28 @@ body {
   text-align: center;
 }
 .container .card .front .bottom .name {
-  padding: 40px 0px 0px 0px;
+  padding: 45px 0px 0px 0px;
   font-size: 25px;
 }
 .container .card .front .bottom .work {
   font-size: 15px;
   font-weight: 900;
-  color: #EB7A77;
+  color: #EEA9A9;
+  padding: 5px 0 0 0;
 }
 .container .card .front .bottom .porfolio {
   padding: 40px;
+}
+.container .card .front .picc {
+  margin: auto;
+  margin-top: -270px;
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 3px;
+  background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10441003_929139190490052_4442256361444094961_n.jpg?oh=6f5a8f13067328d573f345107e3ee974&oe=5A0BAE2B);
+  background-size: cover;
+  color: white;
 }
 .container #background {
   position: fixed;
